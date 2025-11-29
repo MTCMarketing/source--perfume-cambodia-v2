@@ -1,0 +1,84 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* Import Cambodian Luxury Theme */
+@import './cambodian-luxury-theme.css';
+
+:root {
+    /* Font Families */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Font Sizes - Desktop */
+    --text-xs: 0.875rem;
+    /* 14px */
+    --text-sm: 1rem;
+    /* 16px */
+    --text-base: 1.125rem;
+    /* 18px - Larger base size for readability */
+    --text-lg: 1.25rem;
+    /* 20px */
+    --text-xl: 1.5rem;
+    /* 24px */
+    --text-2xl: 2rem;
+    /* 32px */
+    --text-3xl: 3rem;
+    /* 48px */
+    --text-4xl: 4rem;
+    /* 64px */
+    --text-5xl: 5rem;
+    /* 80px */
+
+    /* Line Heights */
+    --leading-tight: 1.1;
+    --leading-snug: 1.3;
+    --leading-normal: 1.6;
+    --leading-relaxed: 1.8;
+
+    /* Letter Spacing */
+    --tracking-tighter: -0.05em;
+    --tracking-tight: -0.025em;
+    --tracking-normal: 0;
+    --tracking-wide: 0.025em;
+    --tracking-wider: 0.05em;
+    --tracking-widest: 0.1em;
+}
+
+/* Global Resets & Defaults */
+body {
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    line-height: var(--leading-normal);
+    color: var(--primary-navy);
+    /* Refined navy instead of heavy dark blue */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    line-height: var(--leading-tight);
+    font-weight: 400;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* Mobile Responsive Overrides */
+@media (max-width: 768px) {
+    :root {
+        --text-base: 1rem;
+        /* 16px on mobile */
+        --text-5xl: 3rem;
+        /* Smaller hero headings */
+        --text-4xl: 2.5rem;
+        --text-3xl: 2rem;
+        --text-2xl: 1.75rem;
+    }
+}

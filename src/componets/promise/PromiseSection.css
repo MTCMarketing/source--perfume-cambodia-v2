@@ -1,0 +1,143 @@
+/* -------------------------------------------------
+   PROMISE STRIP — BackMarket Style (Final)
+   Short. Deal-focused. No poetry. Just trust badges.
+--------------------------------------------------*/
+
+.promise-strip {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin-top: -40px;
+  background: #ffffff;
+}
+
+.promise-heading {
+  margin: 0 0 24px 0;
+}
+
+.promise-heading h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333333;
+  text-align: center;
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.promise-strip-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  background: #eef0f3;
+  padding: 18px 40px;
+  border-radius: 16px;
+  border: 1px solid #e2e4e7;
+}
+
+.promise-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, sans-serif;
+}
+
+.promise-icon {
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e2e4e7;
+}
+
+.promise-icon svg {
+  font-size: 18px;
+  color: #111111;
+}
+
+.promise-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111111;
+  white-space: nowrap;
+}
+
+/* Hover Micro-Interaction */
+.promise-item:hover .promise-icon {
+  background: #ffffff;
+  box-shadow: 0 0 0 2px #000 inset;
+  transition: 0.25s ease;
+}
+
+.promise-item:hover .promise-text {
+  color: #000000;
+}
+
+/* Mobile Layout */
+@media (max-width: 992px) {
+  .promise-strip-container {
+    gap: 22px;
+    padding: 16px 28px;
+  }
+
+  .promise-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .promise-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .promise-strip-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px 28px;
+    padding: 14px 18px;
+  }
+
+  .promise-item {
+    gap: 10px;
+  }
+
+  .promise-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promise-strip {
+    padding: 0;
+  }
+
+  .promise-strip-container {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .promise-item {
+    gap: 8px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .promise-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .promise-text {
+    font-size: 12px;
+  }
+}

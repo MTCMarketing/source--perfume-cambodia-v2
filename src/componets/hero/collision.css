@@ -1,0 +1,150 @@
+.collision-btn {
+  position: relative;
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 1px solid #333;
+  color: #333;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.collision-btn span {
+  position: relative;
+  z-index: 10;
+}
+
+/* Circles */
+.collision-btn::before,
+.collision-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background: #333;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Left circle default position */
+.collision-btn::before {
+  left: -20px;
+}
+
+/* Right circle default position */
+.collision-btn::after {
+  right: -20px;
+}
+
+/* Hover text color */
+.collision-btn:hover {
+  color: #666;
+}
+
+/* Collision animation keyframes */
+@keyframes collide-left {
+  0% {
+    left: -20px;
+    width: 20px;
+    height: 20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 360px;
+    height: 360px;
+  }
+}
+
+@keyframes collide-right {
+  0% {
+    right: -20px;
+    width: 20px;
+    height: 20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 360px;
+    height: 360px;
+  }
+}
+
+@keyframes reverse-left {
+  0% {
+    left: 50%;
+    width: 360px;
+    height: 360px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: -20px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@keyframes reverse-right {
+  0% {
+    right: 50%;
+    width: 360px;
+    height: 360px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: -20px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Default state animations */
+.collision-btn::before {
+  animation: reverse-left 0.8s forwards;
+}
+
+.collision-btn::after {
+  animation: reverse-right 0.8s forwards;
+}
+
+/* Trigger animations on hover */
+.collision-btn:hover::before {
+  animation: collide-left 0.8s forwards;
+}
+
+.collision-btn:hover::after {
+  animation: collide-right 0.8s forwards;
+}
+
+/* Fill entire button after animation */
+.collision-btn:hover {
+  background: #333;
+  color: white;
+  transition: background 0.8s ease, color 0.8s ease;
+}
+
+/* Reverse transition when hover is removed */
+.collision-btn {
+  transition: background 0.8s ease, color 0.8s ease;
+}

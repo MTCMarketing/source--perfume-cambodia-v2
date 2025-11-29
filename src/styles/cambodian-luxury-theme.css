@@ -1,0 +1,142 @@
+/* Cambodian-Inspired Luxury Color System */
+:root {
+  /* Primary Colors - Refined and Soft */
+  --primary-navy: #2C3E50;          /* Softer navy instead of heavy dark blue */
+  --primary-charcoal: #34495E;      /* Elegant charcoal */
+  --primary-slate: #475569;         /* Modern slate */
+  
+  /* Cambodian-Inspired Accents (Subtle) */
+  --cambodian-blue: #4A90E2;        /* Soft blue from flag */
+  --cambodian-red: #DC143C;         /* Refined red from flag */
+  --cambodian-gold: #D4AF37;        /* Traditional gold accent */
+  
+  /* Luxury Neutrals */
+  --luxury-cream: #FEFEFE;          /* Pure cream */
+  --luxury-pearl: #F8F9FA;         /* Pearl white */
+  --luxury-silver: #E9ECEF;        /* Soft silver */
+  --luxury-champagne: #F5F3F0;     /* Champagne tone */
+  
+  /* Refined Grays */
+  --gray-50: #F9FAFB;
+  --gray-100: #F3F4F6;
+  --gray-200: #E5E7EB;
+  --gray-300: #D1D5DB;
+  --gray-400: #9CA3AF;
+  --gray-500: #6B7280;
+  --gray-600: #4B5563;
+  --gray-700: #374151;
+  --gray-800: #1F2937;
+  --gray-900: #111827;
+  
+  /* Gradient Combinations */
+  --gradient-luxury: linear-gradient(135deg, var(--luxury-cream) 0%, var(--luxury-pearl) 100%);
+  --gradient-cambodian-subtle: linear-gradient(135deg, rgba(74, 144, 226, 0.05) 0%, rgba(220, 20, 60, 0.05) 100%);
+  --gradient-premium: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-charcoal) 100%);
+  
+  /* Shadow System */
+  --shadow-soft: 0 2px 8px rgba(44, 62, 80, 0.08);
+  --shadow-medium: 0 4px 16px rgba(44, 62, 80, 0.12);
+  --shadow-strong: 0 8px 32px rgba(44, 62, 80, 0.16);
+  --shadow-luxury: 0 12px 48px rgba(44, 62, 80, 0.20);
+}
+
+/* Cambodian Pattern Utilities (Subtle) */
+.cambodian-accent {
+  position: relative;
+}
+
+.cambodian-accent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    var(--cambodian-blue) 0%, 
+    transparent 30%, 
+    transparent 70%, 
+    var(--cambodian-red) 100%);
+  opacity: 0.3;
+}
+
+/* Subtle Cambodian Border Pattern */
+.cambodian-border {
+  border-top: 1px solid transparent;
+  border-image: linear-gradient(90deg, 
+    var(--cambodian-blue) 0%, 
+    var(--luxury-silver) 50%, 
+    var(--cambodian-red) 100%) 1;
+  border-image-slice: 1;
+}
+
+/* Premium Button with Cambodian Touches */
+.btn-cambodian-luxury {
+  background: var(--gradient-premium);
+  border: 1px solid var(--primary-navy);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-cambodian-luxury::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(74, 144, 226, 0.2) 50%, 
+    transparent 100%);
+  transition: left 0.5s ease;
+}
+
+.btn-cambodian-luxury:hover::after {
+  left: 100%;
+}
+
+/* Luxury Card with Subtle Cambodian Elements */
+.card-cambodian-luxury {
+  background: var(--luxury-cream);
+  border: 1px solid var(--luxury-silver);
+  box-shadow: var(--shadow-soft);
+  position: relative;
+}
+
+.card-cambodian-luxury::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--gradient-cambodian-subtle);
+}
+
+/* Text Color Updates */
+.text-primary-refined {
+  color: var(--primary-navy);
+}
+
+.text-cambodian-blue {
+  color: var(--cambodian-blue);
+}
+
+.text-cambodian-red {
+  color: var(--cambodian-red);
+}
+
+/* Background Utilities */
+.bg-luxury-gradient {
+  background: var(--gradient-luxury);
+}
+
+.bg-cambodian-subtle {
+  background: var(--gradient-cambodian-subtle);
+}
+
+.bg-premium {
+  background: var(--gradient-premium);
+}

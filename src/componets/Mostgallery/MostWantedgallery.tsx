@@ -1,6 +1,6 @@
 import React from "react";
 import { FaShoppingBag, FaStar, FaFire, FaCrown } from "react-icons/fa";
-import "./MostWantedGallery.css";
+import "./MostWantedgallery.css";
 
 const products = [
   {

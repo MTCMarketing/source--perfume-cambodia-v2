@@ -29,8 +29,8 @@ const HeroSlider: React.FC = () => {
       description: "Limited time offer on premium smartphones. Don't miss out on these incredible deals!",
       buttonText: "Shop Now →",
       buttonLink: "/flash-sale",
-      image: "https://ik.imagekit.io/dloitl7fd8/banner1.webp?updatedAt=1764421257250",
-      mobileImage: "https://ik.imagekit.io/dloitl7fd8/Untitled_design_-_2025-11-14T183238.545_6.webp?updatedAt=1764421793628",
+      image: "https://ik.imagekit.io/dloitl7fd8/Exclusive%20Deals.png",
+      mobileImage: "https://ik.imagekit.io/dloitl7fd8/image.png",
       badge: "HOT DEAL",
       discount: "70% OFF",
       timer: true
@@ -42,8 +42,8 @@ const HeroSlider: React.FC = () => {
       description: "Discover the newest smartphones, laptops, and smart devices with exclusive launch prices.",
       buttonText: "Explore New →",
       buttonLink: "/new-arrivals",
-      image: "https://ik.imagekit.io/dloitl7fd8/banner3.webp",
-      mobileImage: "https://ik.imagekit.io/dloitl7fd8/banner3.webp",
+      image: "https://ik.imagekit.io/dloitl7fd8/profitable.png?updatedAt=1764760887257",
+      mobileImage: "https://ik.imagekit.io/dloitl7fd8/ikmage%20rweswdfef.png",
       badge: "NEW",
       discount: "30% OFF"
     },
@@ -54,8 +54,8 @@ const HeroSlider: React.FC = () => {
       description: "Final clearance sale on last season's models. Massive discounts while stocks last!",
       buttonText: "Grab Deal →",
       buttonLink: "/clearance",
-      image: "https://ik.imagekit.io/dloitl7fd8/banner4.webp",
-      mobileImage: "https://ik.imagekit.io/dloitl7fd8/banner4.webp",
+      image: "https://ik.imagekit.io/dloitl7fd8/Untitled%20design.png",
+      mobileImage: "https://ik.imagekit.io/dloitl7fd8/tj456jrtyjyrtk.png",
       badge: "CLEARANCE",
       discount: "60% OFF"
     },
@@ -66,8 +66,8 @@ const HeroSlider: React.FC = () => {
       description: "Stay ahead of the curve with the latest tech gadgets and accessories.",
       buttonText: "Discover More →",
       buttonLink: "/electronics",
-      image: "https://ik.imagekit.io/dloitl7fd8/banner5.webp",
-      mobileImage: "https://ik.imagekit.io/dloitl7fd8/banner5%20mob.webp?updatedAt=1764422342095",
+      image: "https://ik.imagekit.io/dloitl7fd8/PhotoshopExtension_Image.png",
+      mobileImage: "https://ik.imagekit.io/dloitl7fd8/rtjgrnethg4wt436y.png",
       badge: "TRENDING",
       discount: "50% OFF"
     }

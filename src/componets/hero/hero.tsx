@@ -22,18 +22,17 @@ const HeroSlider: React.FC = () => {
   const [isAnimating, setIsAnimating] = useState(false);
 
   const slides: Slide[] = [
-    {
+   {
       id: 1,
-      title: "FLASH SALE",
-      subtitle: "Up to 70% OFF",
-      description: "Limited time offer on premium smartphones. Don't miss out on these incredible deals!",
-      buttonText: "Shop Now →",
-      buttonLink: "/flash-sale",
-      image: "https://ik.imagekit.io/dloitl7fd8/Exclusive%20Deals.png",
-      mobileImage: "https://ik.imagekit.io/dloitl7fd8/image.png",
-      badge: "HOT DEAL",
-      discount: "70% OFF",
-      timer: true
+      title: "CLEARANCE",
+      subtitle: "Last Chance to Buy",
+      description: "Final clearance sale on last season's models. Massive discounts while stocks last!",
+      buttonText: "Grab Deal →",
+      buttonLink: "/clearance",
+      image: "https://ik.imagekit.io/dloitl7fd8/Untitled%20design.png",
+      mobileImage: "https://ik.imagekit.io/dloitl7fd8/tj456jrtyjyrtk.png",
+      badge: "CLEARANCE",
+      discount: "60% OFF"
     },
     {
       id: 2,
@@ -47,17 +46,18 @@ const HeroSlider: React.FC = () => {
       badge: "NEW",
       discount: "30% OFF"
     },
-    {
+     {
       id: 3,
-      title: "CLEARANCE",
-      subtitle: "Last Chance to Buy",
-      description: "Final clearance sale on last season's models. Massive discounts while stocks last!",
-      buttonText: "Grab Deal →",
-      buttonLink: "/clearance",
-      image: "https://ik.imagekit.io/dloitl7fd8/Untitled%20design.png",
-      mobileImage: "https://ik.imagekit.io/dloitl7fd8/tj456jrtyjyrtk.png",
-      badge: "CLEARANCE",
-      discount: "60% OFF"
+      title: "FLASH SALE",
+      subtitle: "Up to 70% OFF",
+      description: "Limited time offer on premium smartphones. Don't miss out on these incredible deals!",
+      buttonText: "Shop Now →",
+      buttonLink: "/flash-sale",
+      image: "https://ik.imagekit.io/dloitl7fd8/Exclusive%20Deals.png",
+      mobileImage: "https://ik.imagekit.io/dloitl7fd8/image.png",
+      badge: "HOT DEAL",
+      discount: "70% OFF",
+      timer: true
     },
     {
       id: 4,
